@@ -2,8 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity">
 
 
     <TextView
@@ -14,10 +17,26 @@
         android:textSize="18sp"/>
 
     <EditText
+        android:id="@+id/name_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:
+        android:hint="Please type your name here"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"/>
 
+    <Button
+        android:id="@+id/show_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Greetings"
+        android:layout_marginTop="20dp"/>
 
-
+    <TextView
+        android:id="@+id/greeting_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/purple_200"/>
 </LinearLayout>
