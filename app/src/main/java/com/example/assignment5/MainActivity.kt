@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         showButton = findViewById(R.id.show_name_button)
 
         showButton.setOnClickListener{
-            val name = nameInput.text.toString().trim()
+            val name = nameInput.text.toString()
             if (name.isNotEmpty()){
                 greetingText.text = "Hello, $name!"
             }else{
