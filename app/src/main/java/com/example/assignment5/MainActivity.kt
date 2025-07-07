@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
         }
-        val expense = Expense(name,amount)
+        val expense = Expense("coco",1.0)
         expenseList.add(expense)
         expenseAdapter.notifyItemInserted(expenseList.size -1)
         expenseNameInput.text.clear()
