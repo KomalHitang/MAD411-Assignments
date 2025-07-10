@@ -24,4 +24,3 @@ class FooterFragment : Fragment() {
         expenseTotalTextView.text = "Total Expenses: $${"%.2f".format(total)}"
     }
 }
-}
